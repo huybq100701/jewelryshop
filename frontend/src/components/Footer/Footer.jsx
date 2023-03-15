@@ -6,7 +6,7 @@ import {
   HistoryEdu,
   Instagram,
   LocationOn,
-  MenuBook,
+  Diamond,
   Phone,
   StoreMallDirectory,
   Twitter,
@@ -18,17 +18,17 @@ const Footer = () => {
       <div className="Footer__tren">
         <div className="Footer__tren__item">
           <Group className="Footer__tren__item__icon" />
-          <h1>125,663</h1>
+          <h1>100,701</h1>
           <p>Số lượng người dùng</p>
         </div>
         <div className="Footer__tren__item">
-          <MenuBook className="Footer__tren__item__icon" />
-          <h1>50,672+</h1>
+          <Diamond className="Footer__tren__item__icon" />
+          <h1>20.000</h1>
           <p>Số lượng sản phẩm</p>
         </div>
         <div className="Footer__tren__item">
           <StoreMallDirectory className="Footer__tren__item__icon" />
-          <h1>1,562</h1>
+          <h1>1,307</h1>
           <p>Số cửa hàng</p>
         </div>
         <div className="Footer__tren__item">
@@ -40,7 +40,8 @@ const Footer = () => {
       <div className="Footer__giua">
         <img src={process.env.PUBLIC_URL + "typeemailbackground.png"} alt="" />
         <h1>
-          Đăng ký email ở đây để có thể nhận được thông báo về nhiều sản phẩm hấp dẫn
+          Đăng ký email ở đây để có thể nhận được thông báo về nhiều sản phẩm
+          hấp dẫn
         </h1>
         <div className="Footer__giua__email">
           <input type="text" placeholder="Nhập email của bạn" />
@@ -58,8 +59,8 @@ const Footer = () => {
           </div>
           <div className="Footer__duoi__trai__thongtin">
             <p>
-              Jewelry Shop là trang web mua bán trang sức online của Công ty công
-              nghệ và chất lượng cao Jewelry.
+              Jewelry Shop là trang web mua bán trang sức online của Công ty
+              công nghệ và chất lượng cao Jewelry.
             </p>
           </div>
           <h1>Follow Us</h1>
