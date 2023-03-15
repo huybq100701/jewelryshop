@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\tai lieu\tai lieu ki 2 nam 4\kien truc va thiet ke phan mem\btl\jewelryshop\env"
+VIRTUAL_ENV="D:\KTTKPM\jewelryshop\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

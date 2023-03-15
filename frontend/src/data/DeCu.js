@@ -1,45 +1,45 @@
 export const DeCu = [
     {
         id: 4,
-        name: "Sách 4",
+        name: "VÒng cổ",
         gia: "130.000",
-        tags:["Action","Adventure","Comedy"],
-        imgUrl:"/sach4.png"
+        tags:["Earrings", "Medallion", "Necklace", "Pendant", "Ring"],
+        imgUrl:"/vong4.jpg"
     },
     {
         id: 5,
-        name: "Sách 5",
+        name: "vòng 1",
         gia: "140.000",
-        tags:["Action","Adventure","Comedy"],
-        imgUrl:"/sach5.png"
+        tags:["Earrings", "Medallion", "Necklace", "Pendant", "Ring"],
+        imgUrl:"/vong1.jpg"
     },
     {
         id: 6,
-        name: "Sách 6",
+        name: "Vòng 2",
         gia: "150.000",
-        tags:["Action","Adventure","Comedy"],
-        imgUrl:"/sach6.png"
+        tags:["Earrings", "Medallion", "Necklace", "Pendant", "Ring"],
+        imgUrl:"/vong2.jpg"
     },
      {
-        id: 1,
-        name: "Pushing Cloud",
+        id: 7,
+        name: "Dây chuyền ngọc trai",
         gia: "150.000",
-        tags:["Action","Adventure","Comedy"],
-        imgUrl:"https://scr.vn/wp-content/uploads/2020/07/h%C3%ACnh-n%E1%BB%81n-%C4%91%E1%BA%B9p-ch%E1%BA%A5t-d%C3%A0nh-cho-mobile-576x1024.png"
+        tags:["Earrings", "Medallion", "Necklace", "Pendant", "Ring"],
+        imgUrl:"/vong3.jpg"
     },
     {
-        id: 2,
-        name: "Sách 2",
+        id: 8,
+        name: "Nhẫn 1",
         gia: "110.000",
-        tags:["Action","Adventure","Comedy"],
-        imgUrl:"/sach2.png"
+        tags:["Earrings", "Medallion", "Necklace", "Pendant", "Ring"],
+        imgUrl:"/nhan1.jpg"
     },
     {
-        id: 3,
-        name: "Sách 3",
+        id: 9,
+        name: "Dây chuyền ngôi sao 6 cánh",
         gia: "120.000",
-        tags:["Action","Adventure","Comedy"],
-        imgUrl:"/sach3.png"
+        tags:["Earrings", "Medallion", "Necklace", "Pendant", "Ring"],
+        imgUrl:"/vong4.jpg"
     },
     
    

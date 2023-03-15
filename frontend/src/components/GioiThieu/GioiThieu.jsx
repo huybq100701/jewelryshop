@@ -30,12 +30,11 @@ const GioiThieu = () => {
         <>
             <div className="GioiThieu">
                 <div className="GioiThieu__trai">
-                    <img src={process.env.PUBLIC_URL + "GioiThieu.png"} alt="" />
+                    <img src={process.env.PUBLIC_URL + "GioiThieu.jpg"} alt="" />
                     <div className="GioiThieu__trai--thongtin">
-                        <p>QUAY TRỞ LẠI TRƯỜNG</p>
-                        <h1>Giảm giá 50%</h1>
-                        <h2>Dành cho sinh viên, học sinh</h2>
-                        <h3>Dành cho công đồng học sinh việt nam.Mong rằng trí tuệ sẽ trở thành người bạn đồng hành của bạn đọc trên mọi hành trình cuộc sống và kỹ năng mà Học cách sống - Sống bằng cả trái tim truyền tải sẽ là phương tiện giúp bạn vượt qua mọi chông gai, thử thách để vươn đến những thành công.</h3>
+                        <h1>Back Friday</h1>
+                        <p>Giảm giá upto 50%</p>
+                        
                         <div className="GioiThieu__trai--thongtin--button">
                             <Link to="/theloai">
 
@@ -99,7 +98,7 @@ const GioiThieu = () => {
                         </div>
                         <div className="GioiThieu__duoi__item__phai">
                             <h1>Chất Lượng Tốt Nhất</h1>
-                            <p>Đảm bảo sách là hàng thật, giá thật, chất lượng tốt</p>
+                            <p>Đảm bảo hàng chính hãng, giá tốt, chất lượng tốt</p>
                         </div>
                     </div>
                     <div className="GioiThieu__duoi--item">
@@ -118,8 +117,8 @@ const GioiThieu = () => {
                             backgroundImage: `url(${process.env.PUBLIC_URL + '/DeCu.png'})`
                         }}
                     >
-                        <h1>Sách Đề Cử Cho Bạn</h1>
-                        <p>Danh sách các cuốn sách đươc đề cử bởi các biên tập viên và các nhà sáng tạo nội dung.</p>
+                        <h1>Trang sức Đề Cử Cho Bạn</h1>
+                        <p>Những món đồ được thiết kế tinh sảo.</p>
                         <div className="GioiThieu__duoi__duoi--decu--slide">
                             {DeCu.map((item, index) => {
                                 return (
@@ -139,8 +138,8 @@ const GioiThieu = () => {
                             backgroundImage: `url(${process.env.PUBLIC_URL + '/PhoBien.png'})`
                         }}
                     >
-                        <h1>Sách Đề Cử Cho Bạn</h1>
-                        <p>Danh sách các cuốn sách đươc đề cử bởi các biên tập viên và các nhà sáng tạo nội dung.</p>
+                        <h1>Trang sức Đề Cử Cho Bạn</h1>
+                        <p>Những món đồ được thiết kế tinh sảo.</p>
                         <div className="GioiThieu__duoi__duoi--phobien--slide">
                             {PhoBien.map((item, index) => {
                                 return (
