@@ -1,7 +1,6 @@
 .DangNhap {
-
     .DangNhap__giua {
-        height:90vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,7 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            h1{
+            h1 {
                 color: rgb(255, 255, 255);
                 font-size: 40px;
                 text-align: center;
@@ -33,7 +32,7 @@
                     width: 100%;
                     align-items: center;
                     justify-content: center;
-                    &:hover{
+                    &:hover {
                         label {
                             color: var(--main-color);
                         }
@@ -43,14 +42,14 @@
                         height: 65px;
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
-                        border: 1px solid #7C6DE4;
+                        border: 1px solid #52cf8f;
                         padding: 0 20px;
                         font-size: 18px;
-                        color: #F6F5FC;
+                        color: #f6f5fc;
                         font-weight: 400;
                         outline: none;
                         transition: all 0.3s;
-                        background-color: #7C6DE4;
+                        background-color: #52cf8f;
 
                         &:focus {
                             border: 1px solid var(--main-color);
@@ -58,14 +57,14 @@
                         }
 
                         &::placeholder {
-                            color: #F6F5FC;
+                            color: #f6f5fc;
                             font-weight: 400;
                             font-size: 18px;
                         }
                     }
 
                     label {
-                        background-color: #FFFFFF;
+                        background-color: #ffffff;
                         height: 65px;
                         width: 160px;
                         border-top-left-radius: 15px;
@@ -78,23 +77,22 @@
                         font-weight: 700;
                         color: #2e2f38;
                         transition: all 0.3s ease-in-out;
-                        
                     }
                 }
             }
-            .DangNhap__giua__dangky__link{
+            .DangNhap__giua__dangky__link {
                 text-decoration: none;
-                 margin-top: 20px;
+                margin-top: 20px;
             }
-            span{
+            span {
                 margin-bottom: 10px;
                 color: rgb(255, 255, 255);
                 cursor: pointer;
                 text-decoration: none;
             }
-           
-            .DangNhap__giua__dangky__button{
-                background-color: #F6F5FC;
+
+            .DangNhap__giua__dangky__button {
+                background-color: #f6f5fc;
                 width: 300px;
                 height: 50px;
                 display: flex;
@@ -105,13 +103,11 @@
                 cursor: pointer;
                 font-size: 20px;
                 transition: all 0.3s ease-in-out;
-                &:hover{
-                    background-color: #998cf0;
+                &:hover {
+                    background-color: #52cf8f;
                     color: white;
                 }
             }
-    
         }
     }
-
 }

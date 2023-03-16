@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid rgb(0, 0, 0, .1);
+    border: 1px solid rgb(0, 0, 0, 0.1);
     padding: 30px 0;
     align-items: center;
     color: var(--main-color);
@@ -12,10 +12,9 @@
         flex-direction: row;
         width: 250px;
         margin-left: 150px;
-            
-        .ThanhMenu__trai__link{
-            text-decoration: none;
 
+        .ThanhMenu__trai__link {
+            text-decoration: none;
         }
         .ThanhMenu__trai--logo {
             display: flex;
@@ -42,7 +41,7 @@
                 p {
                     font-size: 15px;
                     margin-left: 10px;
-                    color: rgb(0, 0, 0, .7);
+                    color: rgb(0, 0, 0, 0.7);
                     text-decoration: none;
                 }
             }
@@ -52,11 +51,11 @@
     .ThanhMenu__giua {
         display: flex;
         flex-direction: row;
-        border: 1px solid rgb(0, 0, 0, .1);
+        border: 1px solid rgb(0, 0, 0, 0.1);
         border-radius: 10px;
         width: 50%;
         margin: 0 20px;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         .ThanhMenu__giua--menu {
             color: var(--main-color);
@@ -67,11 +66,11 @@
             width: 150px;
             padding: 20px;
             cursor: pointer;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             position: relative;
             z-index: 99;
-            &:hover {   
-                color: rgb(#6c5dd4, .4);
+            &:hover {
+                color: rgb(#5dd491, 0.4);
             }
 
             .ThanhMenu__giua--menu--icon {
@@ -94,7 +93,7 @@
                 top: 100%;
                 left: 0;
                 width: 200px;
-                background-color: #6c5dd4;
+                background-color: #52cf8f;
                 padding: 10px 30px;
                 border-radius: 15px;
                 display: none;
@@ -106,12 +105,12 @@
                     color: var(--main-color);
                     font-size: 20px;
                     text-decoration: none;
-                    transition: all .3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
                     font-weight: 700;
                     color: #fff;
 
                     &:hover {
-                        color: #6c5dd4;
+                        color: #5dd491;
                         background-color: #fff;
                     }
                 }
@@ -148,14 +147,13 @@
                 font-size: 30px;
                 padding: 10px;
                 cursor: pointer;
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    color: rgb(#6c5dd4, .4);
+                    color: rgb(#5dd491, 0.4);
                 }
             }
         }
-
     }
 
     .ThanhMenu__phai {
@@ -164,14 +162,14 @@
         align-items: center;
         margin-right: 150px;
         transition: all 1s ease-in-out;
-        .ThanhMenu__phai--dangky--icon{
+        .ThanhMenu__phai--dangky--icon {
             text-decoration: none;
         }
         .ThanhMenu__phai--dangnhap {
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-color: #F1EEFF;
+            background-color: #f1eeff;
             color: var(--main-color);
             font-size: 18px;
             white-space: nowrap;
@@ -180,19 +178,19 @@
             font-weight: 700;
             margin-right: 15px;
             cursor: pointer;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             text-decoration: none;
-            .ThanhMenu__phai--dangnhap__link{
+            .ThanhMenu__phai--dangnhap__link {
                 text-decoration: none;
                 color: var(--main-color);
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
             }
             &:hover {
-                background-color: rgb(#6c5dd4, .4);
+                background-color: rgb(#5dd491, 0.4);
                 color: white;
-                .ThanhMenu__phai--dangnhap__link{
-                color: white;
-            }
+                .ThanhMenu__phai--dangnhap__link {
+                    color: white;
+                }
             }
         }
 
@@ -209,23 +207,23 @@
             cursor: pointer;
             white-space: nowrap;
 
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             box-shadow: 5px 14px 29px 3px rgba(108, 93, 212, 0.4);
-            .ThanhMenu__phai--dangky__link{
+            .ThanhMenu__phai--dangky__link {
                 text-decoration: none;
                 color: white;
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
             }
             .ThanhMenu__phai--dangky--icon {
                 margin-right: 10px;
             }
 
             &:hover {
-                background-color: rgb(#6c5dd4, .4);
+                background-color: rgb(#5dd491, 0.4);
                 color: var(--main-color);
-                 .ThanhMenu__phai--dangky__link{
-                     color: var(--main-color);
-                 }
+                .ThanhMenu__phai--dangky__link {
+                    color: var(--main-color);
+                }
             }
         }
 
@@ -235,15 +233,15 @@
             align-items: center;
             margin-right: 20px;
             color: black;
-            border: 1px solid rgb(0, 0, 0, .1);
+            border: 1px solid rgb(0, 0, 0, 0.1);
             padding: 15px;
             border-radius: 15px;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             cursor: pointer;
 
             &:hover {
                 color: white;
-                background-color: rgb(#6c5dd4, .4);
+                background-color: rgb(#5dd491, 0.4);
             }
         }
 

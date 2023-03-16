@@ -61,8 +61,8 @@ const SachMoi = () => {
               </div>
             </div>
             <p>{sachMoi[0].desc}</p>
-            <h1>Tác Giả:</h1>
-            <h2>Nguyễn Thế Điệp</h2>
+            <h1>Publisher:</h1>
+            <h2>Jewelry</h2>
             <div className="SachMoi__trai__sach__thongtin__gia">
               <h1>{sachMoi[0].price} VNĐ</h1>
               <Link
