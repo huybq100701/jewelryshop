@@ -3,7 +3,7 @@ from .models import *
 # Register your models here.
 
 admin.site.register(Note)
-admin.site.register(Book)
+admin.site.register(Jewel)
 admin.site.register(Account)
 admin.site.register(Collection)
 admin.site.register(Order)

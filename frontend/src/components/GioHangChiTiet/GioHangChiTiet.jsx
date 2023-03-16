@@ -6,14 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { apiUrl } from "../../giaTriMacDinh";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {removeProduct, removeAllProduct} from '../../redux/cartSlice.js'
+import { removeProduct, removeAllProduct } from "../../redux/cartSlice.js";
 function doiSangPhanNghin(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 const GioHangChiTiet = () => {
   const user = useSelector((state) => state.user);
   const cart = useSelector((state) => state.cart);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   // const [gioHangSanPham, setGioHangSanPham] = useState([])
   const [click, setClick] = useState(false);
   const navigate = useNavigate();
@@ -29,17 +29,17 @@ const GioHangChiTiet = () => {
   // }, [user])
 
   const xoaSachGioHang = (id) => {
-    dispatch(removeProduct({id}))
+    dispatch(removeProduct({ id }));
   };
 
   const xacNhanMuaHang = async () => {
     const body = cart.cart.map(({ id, quantity }) => ({ id, quantity }));
     const res = await axios.post(`http://localhost:8000/order/create`, {
-      id : user.user.id,
-      items: body
+      id: user.user.id,
+      items: body,
     });
-    if(res.status === 200){
-      dispatch(removeAllProduct())
+    if (res.status === 200) {
+      dispatch(removeAllProduct());
     }
   };
   return (
@@ -115,7 +115,7 @@ const GioHangChiTiet = () => {
                           <div className="GioHangChiTiet__trai__danhsach__item__thongtin__duoi__trai">
                             <div className="GioHangChiTiet__trai__danhsach__item__thongtin__duoi__trai__tacgia">
                               <h1>Tác giả</h1>
-                              <p>{item.author}</p>
+                              <p>{item.publisher}</p>
                             </div>
                             <div className="GioHangChiTiet__trai__danhsach__item__thongtin__duoi__trai__nam">
                               <h1>Năm</h1>
@@ -126,7 +126,7 @@ const GioHangChiTiet = () => {
                             <div
                               className="GioHangChiTiet__trai__danhsach__item__thongtin__duoi__phai__nut"
                               onClick={() => {
-                                xoaSachGioHang(item.id)
+                                xoaSachGioHang(item.id);
                               }}
                             >
                               <ShoppingCartOutlined className="GioHangChiTiet__trai__danhsach__item__thongtin__duoi__phai__nut__icon" />
@@ -143,7 +143,10 @@ const GioHangChiTiet = () => {
         </div>
       </div>
       <div className="GioHangChiTiet__phai">
-        <h1>Số lượng sách trong giỏ: {cart.cart.reduce((total, item)=> total + item.quantity, 0)}</h1>
+        <h1>
+          Số lượng sách trong giỏ:{" "}
+          {cart.cart.reduce((total, item) => total + item.quantity, 0)}
+        </h1>
 
         <h2>Tổng số tiền: {doiSangPhanNghin(Number(cart.total))} VNĐ</h2>
         <div

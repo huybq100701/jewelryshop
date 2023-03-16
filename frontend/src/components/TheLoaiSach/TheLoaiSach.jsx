@@ -61,7 +61,7 @@ export const TheLoaiSach = () => {
   const [dataSapXep, setDataSapXep] = useState([]);
   const getApi = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/books/`);
+      const res = await axios.get(`http://localhost:8000/jewels/`);
       setData(res.data);
     } catch (error) {
       console.log(error);

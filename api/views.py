@@ -84,18 +84,18 @@ def deleteNote(request, pk):
     return Response('Note was deleted!')
 
 
-# Book
+# Jewel
 @api_view(['GET'])
-def getBooks(request):
-    books = Book.objects.all()
-    serializer = BookSerializer(books, many=True)
+def getJewels(request):
+    jewels = Jewel.objects.all()
+    serializer = JewelSerializer(jewels, many=True)
     return Response(serializer.data)
 
 
 @api_view(['GET'])
-def getBook(request, id):
-    books = Book.objects.get(id = id)
-    serializer = BookSerializer(books, many=False)
+def getJewel(request, id):
+    jewels = Jewel.objects.get(id = id)
+    serializer = JewelSerializer(jewels, many=False)
     return Response(serializer.data)
 
 
@@ -152,11 +152,11 @@ def createOrder(request):
         # Tạo chi tiết đơn hàng
         cart_items = request.data.get('items')
         for cart_item in cart_items:
-            book_id = cart_item.get('id')
-            book = get_object_or_404(Book, id=book_id)
+            jewel_id = cart_item.get('id')
+            jewel = get_object_or_404(Jewel, id=jewel_id)
             quantity = cart_item.get('quantity')
-            price = book.price
-            OrderItem.objects.create(order=order, book=book, quantity=quantity, price=price)
+            price = jewel.price
+            OrderItem.objects.create(order=order, jewel=jewel, quantity=quantity, price=price)
 
         return Response(serializer.data)
     return Response(serializer.errors)

@@ -6,9 +6,9 @@ class NoteSerializers(ModelSerializer):
         model = Note
         fields = '__all__'
 
-class BookSerializer(ModelSerializer):
+class JewelSerializer(ModelSerializer):
     class Meta:
-        model = Book
+        model = Jewel
         fields = '__all__'
 
 class AccountSerializer(ModelSerializer):
@@ -22,7 +22,7 @@ class CollectionSerializer(ModelSerializer):
         fields = '__all__'
 
 class OrderItemSerializer(ModelSerializer):
-    book = BookSerializer()
+    jewel = JewelSerializer()
     class Meta:
         model = OrderItem
         fields = '__all__'
